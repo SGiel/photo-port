@@ -9,6 +9,8 @@ function Nav(props) {
     currentCategory,
     setContactSelected,
   } = props;
+
+  //useEffect looking for change in currentCategory to update document.title
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);

@@ -146,10 +146,10 @@ const PhotoList = ({ category }) => {
           // src={require(`./small/${category}/${i}.jpg`)}
           // src={`../../assets/small/${category}/${i}.jpg`}
           // src={'../../assets/small/food/0.jpg'}
-          // src={require(`../../assets/small/${category}/${i}.jpg`)}
+          src={require(`../../assets/small/${category}/${i}.jpg`).default}
           //  src={`food` + `0`}
             // src={require(`./small/food/0.jpg`)}
-            src={`../../assets/small/${category}/${i}.jpg`}
+            // src={`../../assets/small/${category}/${i}.jpg`}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
