@@ -1,24 +1,5 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
-// import commercial0 from "./small/commercial/0.jpg";
-// import commercial1 from "./small/commercial/1.jpg";
-// import commercial2 from "./small/commercial/2.jpg";
-// import commercial3 from "./small/commercial/3.jpg";
-// import commercial4 from "./small/commercial/4.jpg";
-// import food0 from "../../assets/small/food/0.jpg";
-// import food1 from "./small/food/1.jpg";
-// import food2 from "./small/food/2.jpg";
-// import food3 from "./small/food/3.jpg";
-// import food4 from "./small/food/4.jpg";
-// import landscape0 from "./small/landscape/0.jpg";
-// import landscape1 from "./small/landscape/1.jpg";
-// import landscape2 from "./small/landscape/2.jpg";
-// import landscape3 from "./small/landscape/3.jpg";
-// import landscape4 from "./small/landscape/4.jpg";
-// import portraits0 from "./small/portraits/0.jpg";
-// import portraits1 from "./small/portraits/1.jpg";
-// import portraits2 from "./small/portraits/2.jpg";
-// import portraits3 from "./small/portraits/3.jpg";
 
 const PhotoList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -137,19 +118,7 @@ const PhotoList = ({ category }) => {
         {currentPhotos.map((image, i) => (
 
           <img
-          // src = {'/small/food/0.jpg'}
-          // src={getImage(category,i)}
-            //src={imageName}
-          //src={food0}
-          //src={'../../assets/small/food/0.jpg'}
-          //  src={`${category}${i}`}
-          // src={require(`./small/${category}/${i}.jpg`)}
-          // src={`../../assets/small/${category}/${i}.jpg`}
-          // src={'../../assets/small/food/0.jpg'}
           src={require(`../../assets/small/${category}/${i}.jpg`).default}
-          //  src={`food` + `0`}
-            // src={require(`./small/food/0.jpg`)}
-            // src={`../../assets/small/${category}/${i}.jpg`}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
